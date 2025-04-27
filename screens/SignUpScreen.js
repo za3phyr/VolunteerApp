@@ -111,12 +111,6 @@ const SignUpScreen = () => {
         >
           <Text style={[styles.roleText, role === 'organizer' && styles.roleTextActive]}>Organizer</Text>
         </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.roleButton, role === 'admin' && styles.roleButtonActive]}
-          onPress={() => handleRoleSelect('admin')}
-        >
-          <Text style={[styles.roleText, role === 'admin' && styles.roleTextActive]}>Admin</Text>
-        </TouchableOpacity>
       </View>
 
       {/* Sign Up Button */}
@@ -161,23 +155,25 @@ const styles = StyleSheet.create({
     fontSize: FontSize.size_xl, // Set font size
     marginBottom: 20, // Space between input fields
     borderWidth: 1, // Add border
-    borderColor: Color.colorGray_100, // Set border color
-  },
-  roleContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    marginBottom: 20,
-  },
-  roleButton: {
-    backgroundColor: Color.colorGainsboro,
-    borderRadius: Border.br_xl,
-    paddingVertical: 10,
-    paddingHorizontal: 15,
-    borderWidth: 1,
-    borderColor: Color.colorGray_100,
-  },
-  roleButtonActive: {
-    backgroundColor: "rgba(85, 179, 237, 0.61)", // Highlighted color
+     // Set border color
+      },
+      roleContainer: {
+        flexDirection: 'row',
+        justifyContent: 'center', // Center buttons horizontally
+        alignItems: 'center', // Center buttons vertically
+        marginBottom: 20,
+      },
+      roleButton: {
+        backgroundColor: Color.colorGainsboro,
+        borderRadius: Border.br_xl,
+        paddingVertical: 10,
+        paddingHorizontal: 15,
+        borderWidth: 1,
+        borderColor: Color.colorGray_100,
+        marginHorizontal: 10, // Add spacing between buttons
+      },
+      roleButtonActive: {
+        backgroundColor: "rgba(85, 179, 237, 0.61)", // Highlighted color
     borderColor: "rgba(85, 179, 237, 0.61)",
   },
   roleText: {
