@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBxpBjsmFFNvpFnYDEVqZ5cgZaFQipY8io",
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
   authDomain: "volunteerapp-cd291.firebaseapp.com",
   projectId: "volunteerapp-cd291",
   storageBucket: "volunteerapp-cd291.appspot.com",
