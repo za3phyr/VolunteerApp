@@ -10,7 +10,7 @@ import ReactNativeAsyncStorage from "@react-native-async-storage/async-storage";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBxpBjsmFFNvpFnYDEVqZ5cgZaFQipY8io",
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
   authDomain: "volunteerapp-cd291.firebaseapp.com",
   projectId: "volunteerapp-cd291",
   storageBucket: "volunteerapp-cd291.appspot.com",
